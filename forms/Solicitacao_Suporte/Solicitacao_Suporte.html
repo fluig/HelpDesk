@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <!-- Bibliotecas da Platforma Fluig (Padrão do Projeto) -->
+        <link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/> <!-- Framework de Estilos Fluig  --> 
+        <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+        <script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/custom.js"> </script>
+        <script type="text/javascript" src="/webdesk/vcXMLRPC.js"> </script>
+        <!-- Folha de estilo customizada -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+
+    <body>
+        <div class="fluig-style-guide"><!-- Classe de estilo do Fluig -->
+        <div class="container">
+                <form name="form" role="form">
+                    <h2>i18n.translate("titulo")</h2> <!-- parâmetro i18n.translate é um padrão para que o fluig identifique que haverá tradução, permitindo passar um rótulo e esse mesmo rótulo é traduzido no arquivo .properties -->
+                        <fieldset id="solicitante" name="solicitante"> <!-- Start fildset -->
+                            <legend>i18n.translate("legend_solic")</legend>
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="name" id="lbl_name"class="col-sm-1 control-label">i18n.translate("name")</label>
+                                    <input type="text" class="form-control" name="name" id="name"> <!-- Campo nome solicitante -->
+                                </div>   
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="email" id="lbl_email" class="col-sm-1 control-label">i18n.translate("email")</label>
+                                    <input type="text" class="form-control" name="email" id="email"> <!-- Campo email -->
+                                </div>  <!-- END Form-group -->
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="ramal" id="lbl_ramal" class="col-sm-2 control-label">i18n.translate("ramal")</label>
+                                    <input type="text" class="form-control" name="ramal" id="ramal"> <!-- Campo nome solicitante -->
+                                </div>
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="departamento" id="lbl_dpto"class="col-sm-2 control-label">i18n.translate("departamento")</label>
+                                    <input type="text" class="form-control" name="departamento" id="departamento"> <!-- Campo email -->
+                                </div>  <!-- END Form-group -->
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="tipo_incidente" id="lbl_incidente" class="col-sm-1 control-label">i18n.translate("tipo_incidente")</label>
+                                        <!-- campo zoom realizar a consulta de dados de outro formulário através do fluig passando o nome do dataset e os campos (field) -->
+                                        <input type="zoom" class="form-control" name="tipo_incidente" id="tipo_incidente"
+                                            data-zoom="{
+                                                    'displayKey':'nmIncidente',
+                                                        'datasetId':'ds_tipoIncidente',                                 
+                                                        'placeholder': 'Escolha o tipo de incidente',
+                                                            'fields':[
+                                                            {
+                                                            'field':'nmIncidente',
+                                                            'label':'Incidente',
+                                                            'standard':'true'
+                                                            },{
+                                                            'field':'papel_responsavel',
+                                                            'label':'Papel responsavel'
+                                                            },{
+                                                            'field':'dsincidente',
+                                                            'label':'Descrição'
+                                                            }
+                                                        ]
+                                                    }"
+                                        /><!-- End Input zoom -->                        
+                            </div>  <!-- END Form-group -->
+                            <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                <label for="Papel_responsavel" id="papel">i18n.translate("papel_resp")</label> 
+                                <input type="text" class="form-control" name="idPapelResponsavel" id="idPapelResponsavel"> <!-- Campo email -->
+                            </div>
+                            <div class="row form-group col-sm-10"> <!-- start Form-group -->
+                                <label for="dsIncidente" id="lbl_descricao" class="col-sm-2 control-label">i18n.translate("desc_incidente")</label> 
+                                <textarea class="form-control" rows="5" name="dsIncidente" id="dsIncidente"></textarea> <!-- Campo descricao do incidente -->		  		
+                            </div> <!-- End form-group-->
+                        </fieldset>
+                        <fieldset id="suporte" name="suporte"> <!-- Start fildset -->
+                            <legend>i18n.translate("legend_suport")</legend>
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="idticket" id="lbl_ticket" class="col-sm-2 control-label">i18n.translate("ticket")</label>			
+                                    <input type="text" class="form-control" name="idticket" id="idticket"> <!-- Campo Número do ticket -->
+                                </div>
+                                <div class="row form-group col-sm-6"> <!-- start Form-group -->
+                                    <label for="dt_ticket" id="lbl_data" class="col-sm-2 control-label">i18n.translate("ds_ticket")</label>			
+                                    <input type="text" class="form-control" name="dt_ticket" id="dt_ticket"> <!-- Campo data do ticket -->
+                                </div><!-- END Form-group -->
+                                <div class="row form-group col-sm-10"> <!-- start Form-group -->
+                                    <label for="ds_solucao" id="lbl_solucao" class="col-sm-2 control-label">i18n.translate("desc_solucao")</label>  
+                                    <textarea class="form-control" rows="5" name="ds_solucao" id="ds_solucao"></textarea> <!-- Campo solução do incidente -->		  		
+                                </div> <!-- End form-group--> 
+                                <div class="row form-group col-sm-4"> <!-- start Form-group -->
+                                    <label for="sp_responsavel" id="lbl_responsavel">i18n.translate("sp_responsavel")</label>			
+                                    <input type="text" class="form-control" name="sp_responsavel" id="sp_responsavel"> <!-- Campo nome usuario suporte-->
+                                </div>
+                                <div class="row form-group col-sm-4"> <!-- start Form-group -->
+                                    <label for="sp_email" id="lbl_resp_email">i18n.translate("sp_email")</label>			
+                                    <input type="text" class="form-control" name="sp_email" id="sp_email"> <!-- Campo email usuario suporte -->
+                                </div><!-- END Form-group -->
+                                <div class="row form-group col-sm-4"> <!-- start Form-group -->
+                                    <label for="sp_ramal" id="lbl_resp_ramal">i18n.translate("sp_ramal")</label>			
+                                    <input type="text" class="form-control" name="sp_ramal" id="sp_ramal"> <!-- Campo ramal usuario suporte-->
+                                </div>
+                        </fieldset>
+                        <fieldset id="feedback" name="feedback"> <!-- Start fildset -->
+                            <legend>i18n.translate("legend_feed")</legend>
+                                <div class="row form-group">
+                                    <label for="fgOtima" class="col-sm-2 control-label">i18n.translate("avaliacao_atend")</label>
+                                        <div class="col-sm-1">
+                                            <label class="radio-inline">
+                                            <input type="radio" name="fgAvaliacaoAtendimento" id="fgOtima" value="&Oacute;tima">
+                                                i18n.translate("rdb_otima")
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="fgAvaliacaoAtendimento" id="fgRegular" value="Regular">
+                                                    i18n.translate("rdb_regular")
+                                            </label>
+                                        </div>
+                                    <div class="col-sm-1">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="fgAvaliacaoAtendimento" id="fgRuim" value="Ruim">
+                                                i18n.translate("rdb_ruim")						  
+                                        </label>
+                                    </div>
+                                </div>
+                            <div class="row form-group col-sm-10">
+                                <label for="dscomentario" id="lbl_comentario"class="col-sm-1 control-label">i18n.translate("comentario")</label>
+                                    <textarea class="form-control" rows="5" name="dscomentario" id="dscomentario"></textarea>
+                            </div>
+                        </fieldset>
+                </form>
+            </div>
+        </div>  
+    </body>
+</html>

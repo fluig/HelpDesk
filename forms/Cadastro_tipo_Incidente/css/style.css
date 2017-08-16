@@ -1,0 +1,57 @@
+body{
+
+    font-family: Open Sans;
+}
+
+
+
+label{
+	
+	font-family: Open Sans;
+	
+	
+}
+
+
+
+.container{
+
+  margin-top: 150px;
+  background: #F9F9F9;
+  padding: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  
+
+}
+
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  
+  }
+
+  
+.fluig-style-guide legend{
+  
+  	padding-top: 20px;
+  
+  }
+
+
+  p{
+    color:#000;
+    text-align: center;
+    margin-top:20px;
+
+  }
+  
+  
+  	.form-group{
+  		
+  	margin-left: 10px !important;
+ 
+  	}
+  	
+ 

@@ -1,0 +1,153 @@
+body{
+
+    font-family: Open Sans;
+}
+
+
+
+label{
+	
+	font-family: Open Sans;
+	
+	
+}
+
+
+
+.container{
+
+  background: #F9F9F9;
+  padding: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  
+
+}
+
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  
+  }
+
+  
+.fluig-style-guide legend{
+  
+  	padding-top: 20px;
+  
+  }
+
+
+  p{
+    color:#000;
+    text-align: center;
+    margin-top:20px;
+
+  }
+  
+  #lbl_name{
+ 	
+    padding-left: 0px;
+    padding-right: 0px;
+  
+  }
+  	
+   #lbl_ramal{
+ 	
+    padding-left: 0px;
+    padding-right: 0px;
+  	
+   }
+  
+  	 #lbl_dpto{
+ 	
+    padding-left: 0px;
+    padding-right: 0px;
+  	
+  	 }
+  	 
+  	 #lbl_email{
+ 	
+ 	padding-left: 0px;
+    padding-right: 0px;
+ 	
+ 	}
+  	 
+  	 
+  	#lbl_incidente{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  	}
+  	 
+  	
+  	#lbl_descricao{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  	}
+  	
+  		
+  	#lbl_ticket{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  	}
+  	
+  	#lbl_data{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  	
+  	}
+  	
+  	#lbl_solucao{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  
+	}  	 
+  	 
+  	 
+  	#lbl_responsavel{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  	
+  	} 
+  	
+  	
+  	
+  	#lbl_resp_email{
+  	
+  	padding-left: 0px;
+    padding-right: 0px;
+  	
+  	}
+  	
+  	#lbl_resp_ramal{
+  	
+  	padding-left: 0px;
+    padding-right: 0px; 	
+  	}
+  	 
+  	 
+  	 #lbl_comentario{
+  	 
+  	 padding-left: 0px;
+     padding-right: 0px; 
+     font-family: 
+  	 
+  	 }
+  	 
+  	 
+  	 
+  	 
+  	.form-group{
+  		
+  	margin-left: 10px !important;
+ 
+  	}
+  	
+ 

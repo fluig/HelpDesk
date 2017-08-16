@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>  <!-- Biblioteca Css Style Guide Fluig -->
+        <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>   <!-- biblioteca Jquery-->
+        <script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>  <!-- biblioteca Jquery-->
+        <script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script> <!-- biblioteca Javascript-->
+        <script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script> <!-- biblioteca Javascript-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="fluig-style-guide">
+            <div class="container">
+	                <h2>i18n.translate("titulo")</h2>
+	                    <form class="form-horizontal" role="form">
+	                    	<div class="form-group"> <!-- Start Form-Group-->
+	    	                    <label for="cdIncidente" class="col-sm-2 control-label">i18n.translate("codigo")</label>
+	    	                        <div class="col-sm-3">
+	      		                        <input type="text" class="form-control" name="cdIncidente" id="cdIncidente" > <!-- Campo cod. Incidente -->
+	    	                </div>    	                        
+	    	                    <label for="nmIncidente" class="col-sm-1 control-label">i18n.translate("Nome")</label>
+	    	                        <div class="col-sm-6">
+	      		                        <input type="text" class="form-control" name="nmIncidente" id="nmIncidente" >
+	    	                        </div>
+	  	                    </div> <!-- End form-group -->
+	  	                  
+	  						<div class="form-group"> <!-- Start Form-Group-->
+	    	                    <label for="nrPrazo" class="col-sm-2 control-label">i18n.translate("prazo")</label>
+	    	                        <div class="col-sm-3">
+	      		                        <input type="text" class="form-control" name="nrPrazo" id="nrPrazo" >
+	    	                        </div>
+                                <label for="btZoomTipoIncidente" class="col-sm-1 control-label">i18n.translate("responsavel")</label>
+				    				<div class="col-sm-6">
+                                        <input class="form-control"
+                                                type="zoom"
+                                                id = "papel_responsavel"
+                                                name="papel_responsavel"
+                                                data-zoom="{
+                                                    'displayKey':'roleDescription',
+                                                    'datasetId':'workflowRole',
+                                                    'maximumSelectionLength':'1',
+                                                    'placeholder':'Escolha o papel',
+                                                    'fields':[
+                                                        {
+                                                        'field':'roleDescription',
+                                                        'label':'papel Responsavell'
+                                                        }
+                                                    ]
+                                                }"
+                                            />
+        							</div>
+  							</div>
+	  	                    <div class="form-group"> <!-- Start Form-Group-->
+				  				<label for="dsIncidente" class="col-sm-2 control-label">i18n.translate("desc_incidente")</label> 
+				    				<div class="col-sm-10">
+				  						<textarea class="form-control" rows="3" name="dsIncidente" id="dsIncidente"></textarea> <!-- Campo descrição do incidente -->
+									</div>				  		
+				  			</div> <!-- End Form-Group-->
+	                    </form> <!-- End Form-->
+             </div> <!-- End Container-->
+          </div>
+    </body>
+</html>
