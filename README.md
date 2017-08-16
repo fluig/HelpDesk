@@ -19,9 +19,3 @@ Processo de Help Desk que visa gerenciar a demanda de atividades de suporte em u
 ### Origem do desenvolvimento
 
 Projeto desenvolvido pelo time fluig Academy para apresentação do 1º Webinar Técnico da plataforma fluig. 
-Clique na imagem abaixo para acessar a gravação do Webinar. 
-
-<a href="http://lp.fluig.com/fluig-webinar-terceira-plataforma" target="_blank">
-  <img src="https://www.fluig.com/assets/uploads/contents/thumb/thumb_terceira_plataforma-1497398972.jpg" alt="Screenshot 4">
-</a>
- 
