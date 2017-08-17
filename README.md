@@ -19,3 +19,7 @@ Processo de Help Desk que visa gerenciar a demanda de atividades de suporte em u
 ### Origem do desenvolvimento
 
 Projeto desenvolvido pelo time fluig Academy para apresentação do 1º Webinar Técnico da plataforma fluig. 
+
+### Fique ligado!
+
+Os projetos compartilhados no repositório do GitHub não possuem suporte pois é um ambiente de compartilhamento comunitário, sendo o modelo AS IS. 
