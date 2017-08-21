@@ -53,6 +53,11 @@ Projeto desenvolvido pelo time fluig Academy para apresentação do 1º Webinar 
   
 </table>
 
+
+### Acesse o video do Webinar Técnico
+
+* DES-PA-CI-TO! Iniciando “devagarinho” o desenvolvimento com o BPM fluig: https://www.youtube.com/watch?v=S2yiB9MkjRo&feature=youtu.be
+
 ### Fique ligado!
 
 Os projetos compartilhados no repositório do GitHub não possuem suporte pois é um ambiente de compartilhamento comunitário, sendo o modelo AS IS. 
